@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import Button from "./Button";
 
 function Navbar() {
   const classlinks = ["Home", "Work", "Culture", "", "News"];
   return (
-    <div className="max-w-screen-xl mx-auto py-4 flex  gap-10  ">
-      <div className="flex item-center justify-center">
+    <div className="max-w-screen-xl mx-auto py-3 flex  justify-between gap-10 border-b-[1px] border-zinc-700  ">
+      <div className="flex items-center justify-center ">
         <svg
           width="18"
           height="18"
@@ -38,7 +39,7 @@ function Navbar() {
         <div className="flex gap-14 links ml-32">
           {classlinks.map((link, index) =>
             link.length === 0 ? (
-              <span  key={index} className="w-[2px] h-7  bg-zinc-700"></span>
+              <span key={index} className="w-[2px] h-7  bg-zinc-700"></span>
             ) : (
               <a
                 key={index}
@@ -57,6 +58,8 @@ function Navbar() {
           )}
         </div>
       </div>
+
+      <Button />
     </div>
   );
 }

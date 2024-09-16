@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar"
 function App() {
   return (
     <>
-    <div className='w-full h-screen bg-zinc-950 text-white font-serif'>
+    <div className='w-full h-screen bg-zinc-900 text-white font-serif'>
       <Navbar />
     </div>
     </>
