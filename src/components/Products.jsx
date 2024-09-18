@@ -41,18 +41,17 @@ function Products() {
   ];
 
   const [pos, setPos] = useState(null);
-  const [hovered , setHovered] = useState(false);
+ 
 
   const mover = (val) => {
     setPos(val * 20);
-    setHovered(true);
-    
+  
   };
 
   return (
     <div className="mt-32 relative">
       {products.map((item, index) => (
-        <Product key={index} val={item} mover={mover} count={index} hovered={hovered}/>
+        <Product key={index} val={item} mover={mover} count={index} hovered={true}/>
       ))}
       <div className="absolute top-0 w-full h-full pointer-events-none">
         <motion.div
