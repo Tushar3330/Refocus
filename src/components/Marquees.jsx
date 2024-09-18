@@ -29,14 +29,15 @@ function Marquees() {
         ],
     ]
     return (
-        <div className="py-20 mt-20 w-full  overflow-hidden">
-            {images.map((item, index) => (
-                <Marquee
-                    key={index}
-                    imagesUrl={item}
-                />
-            ))}
-        </div>
+        <div className="py-20 mt-20 w-full relative overflow-hidden">
+        {images.map((item, index) => (
+            <Marquee
+                key={index}
+                direction={index === 0 ? "left" : "right"}
+                imagesUrl={item}
+            />
+        ))}
+    </div>
     )
 }
 
