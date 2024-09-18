@@ -23,13 +23,13 @@ function Cards() {
                     width={"basis-2/3"}
                     start={true}
                     para={false}
-                    hover={"bg-violet-600"}
+                    hover={true}
                     header={content[1].header}
                     title={content[1].title}
                 />
             </div>
         </div>
-    )
+    )   
 }
 
 export default Cards
